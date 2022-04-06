@@ -1,69 +1,114 @@
 @charset "utf-8";
-
-/*#region Font imports*/
-@font-face {
-    font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica.ttf);
-    font-weight: normal;
+/*#region Margin config*/
+.mt-1{
+    margin-top: 20px;
 }
 
-@font-face {
-    font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica-Bold.ttf);
-    font-weight: bold;
+.mb-1{
+    margin-bottom: 20px;
 }
 
-@font-face {
-    font-family: 'Metropolis';
-    src: url(../_fonts/Metropolis-Regular.otf);
-    font-weight: normal;
+.ms-1{
+    margin-left: 20px;
 }
 
-@font-face {
-    font-family: 'Metropolis';
-    src: url(../_fonts/Metropolis-Medium.otf);
-    font-weight: 300;
+.me-1{
+    margin-right: 20px;
+}
+
+.m-1{
+    margin: 20px;
+}
+
+.mt-2{
+    margin-top: 25px;
+}
+
+.mb-2{
+    margin-bottom: 25px;
+}
+
+.ms-2{
+    margin-left: 25px;
+}
+
+.me-2{
+    margin-right: 25px;
+}
+
+.m-2{
+    margin: 25px;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.mb-3{
+    margin-bottom: 30px;
+}
+
+.ms-3{
+    margin-left: 30px;
+}
+
+.me-3{
+    margin-right: 30px;
+}
+
+.m-3{
+    margin: 30px;
 }
 /*#endregion*/
 
-:root{
-    /*#region Color styles*/
-    --primary-color: #1E57C7;
-    --secondary-color: #585E71;
-
-    --primary-100: #FFFFFF;
-    --primary-99: #FDFBFF;
-    --primary-95: #EDF0FF;
-    --primary-90: #DAE2FF;
-    --primary-80: #B0C5FF;
-    --primary-70: #87A9FF;
-    --primary-60: #5D8CFE;
-    --primary-50: #4071E1;
-    --primary-40: #1E57C7;
-    --primary-30: #003FA6;
-    --primary-20: #002B76;
-    --primary-10: #00184A;
-    --primary-0: #000000;
-    
-    --secondary-100: #FFFFFF;
-    --secondary-99: #FDFBFF;
-    --secondary-95: #EDF0FF;
-    --secondary-90: #DDE2F9;
-    --secondary-80: #C1C6DD;
-    --secondary-70: #A5AAC0;
-    --secondary-60: #8B90A5;
-    --secondary-50: #71778B;
-    --secondary-40: #585E71;
-    --secondary-30: #404659;
-    --secondary-20: #2A3042;
-    --secondary-10: #151B2C;
-    --secondary-0: #000000;
-    /*#endregion*/
-
-    /*Font Styles*/
-    --title-font: 'Metropolis', sans-serif;
-    --text-font: 'Helvetica', sans-serif;
+/*#region Text configs*/
+.h1-default, .h2-default, .h3-default{
+    font-family: var(--title-font);
 }
+
+.text-default{
+    font-family: var(--text-font);
+    color: var(--primary-10);
+}
+
+.h1-default{
+    font-size: 48px;
+    margin-bottom: 30;
+    color: var(--primary-10);
+}
+
+.h2-default{
+    font-size: 34px;
+    letter-spacing: 0.25;
+    font-weight: 300;
+    color: var(--primary-20);
+}
+
+.h3-default{
+    font-size: 24px;
+    color: var(--primary-30);
+}
+
+.btn-text{
+    font-size: 14px;
+    letter-spacing: 1.25%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-100);
+}
+
+.ul-default{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-left: 0px;
+}
+.li-default{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5%;
+    color: var(--primary-30);
+}
+/*#endregion*/
 
 body{
     font-family: var(--text-font);
