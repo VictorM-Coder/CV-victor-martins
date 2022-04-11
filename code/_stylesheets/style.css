@@ -61,6 +61,7 @@
     margin: 30px !important;
 }
 /*#endregion*/
+
 .p-1{
     padding: 15px !important;
 }
@@ -97,7 +98,7 @@
 
 .btn-text{
     font-size: 14px;
-    letter-spacing: 1.25%;
+    letter-spacing: 1.25px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--secondary-100);
@@ -114,20 +115,41 @@
     letter-spacing: 0.5%;
     color: var(--primary-30);
 }
+
+.link-default:hover{
+    color: var(--secondary-90) !important;
+    transform: scale(1.04);
+}
 /*#endregion*/
 
 body{
     font-family: var(--text-font);
+    background-color: var(--primary-95);
 }
 
 @media (min-width: 992px){
-    .ms-3{
+    .ms-lg-3{
         margin-left: 30px !important;
     }
 }
 
 @media (max-width: 992px) {
-    .ms-3{
+    .ms-lg-3{
         margin-left: 0px !important;
     }
+}
+
+.btn-menu{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.menu-icon{
+    width: auto !important;
+    height: auto !important;
+}
+
+.img-menu{
+    width: 60px;
+    border-radius: 30px;
 }
