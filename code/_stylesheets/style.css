@@ -121,6 +121,9 @@
     transform: scale(1.04);
 }
 /*#endregion*/
+.row{
+    --bs-gutter-x: 30px !important;
+}
 
 body{
     font-family: var(--text-font);
