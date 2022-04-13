@@ -63,6 +63,10 @@
 }
 
 @media (min-width: 992px){
+    .mt-lg-3{
+        margin-top: 30px !important;
+    }
+
     .ms-lg-3{
         margin-left: 30px !important;
     }
@@ -99,8 +103,10 @@
 
 .h1-default{
     font-size: 48px;
-    margin-bottom: 30;
+    margin-bottom: 5px !important;
+    line-height: 1em !important;
     color: var(--primary-10);
+
 }
 
 .h2-default{
@@ -141,11 +147,16 @@
 }
 /*#endregion*/
 /*region sobreposições*/
+.container{
+    padding: 0px;
+}
 .row{
     --bs-gutter-x: 30px !important;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .img-fluid{
-    width: 100%;
+    max-width: 100% ;
 }
 /*endregion*/
 body{
