@@ -80,6 +80,10 @@
     .ps-lg-1{
         padding-left: 15px !important;
     }
+
+    .pe-lg-1{
+        padding-right: 15px !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -95,7 +99,12 @@
 }
 
 .pt-1{
-    padding-top: 15px;
+    padding-top: 15px !important;
+}
+
+.py-middle-1{
+    padding-top: 7.5px !important;
+    padding-bottom: 7.5px !important;
 }
 /*#endregion*/
 .bg-primary{
