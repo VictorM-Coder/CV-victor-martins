@@ -163,6 +163,7 @@
     font-weight: bold;
     letter-spacing: 0.5%;
     color: var(--primary-30);
+    margin-bottom: 0px !important;
 }
 
 .link-default:hover{
