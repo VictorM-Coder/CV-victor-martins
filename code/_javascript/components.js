@@ -33,10 +33,14 @@ class Container{
     }
 
     addItem(title, description){
-        this.list.appendChild(this.#createItem(title, description))
+        if(description !== undefined){
+            this.list.appendChild(this.#createItemComplete(title, description))
+        }else{
+            this.list.appendChild(this.#createItemSimple(title))
+        }
     }
 
-    #createItem(title, description){
+    #createItemComplete(title, description){
         let item = document.createElement('li')
         let itemTitle = document.createElement('p')
         let itemDescription = document.createElement('p')
@@ -50,6 +54,20 @@ class Container{
 
         item.appendChild(itemTitle)
         item.appendChild(itemDescription)
+
+        return item
+    }
+
+    #createItemSimple(text){
+        let item = document.createElement('li')
+        let itemText = document.createElement('p')
+
+        itemText.innerHTML = text
+
+        item.classList.add('col-lg-4')
+        itemText.classList.add('text-default')
+
+        item.appendChild(itemText)
 
         return item
     }

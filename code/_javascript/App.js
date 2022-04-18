@@ -1,3 +1,8 @@
+let sectionObjetivos =  new Container('Objetivos')
+sectionObjetivos.addItem('Aplicar meus conhecimentos adquiridos durante a matéria de modo prático e didátido')
+sectionObjetivos.addItem('Praticar e aprimorar minhas soft skills. Tais como trabalho em equipe, criatividade e comunicação')
+sectionObjetivos.addItem('Contribuir com a comunidade acadêmica da UFC')
+
 let sectionTecnologias = new Container('Tecnologias')
 sectionTecnologias.addItem('Java (intermediário)', 'POO, introdução à JDBC e introdução à JavaFX')
 sectionTecnologias.addItem('MySQL (básico/intermediário)', 'Criação de tabelas, consulta de dados e relacionamentos entre tabelas')
@@ -15,5 +20,6 @@ sectionHabilidades.addItem('Pacote Office', 'Cursos de Word, Excel e Power Point
 sectionHabilidades.addItem('Introdução à psicologia das cores', 'Leitura da “Psicologia das cores: Como as cores afetam a emocao e a razao')
 sectionHabilidades.addItem('UI/UX', 'Autodidata')
 
+document.getElementById('objetivos').appendChild(sectionObjetivos.getContainer())
 document.getElementById('tecnologias').appendChild(sectionTecnologias.getContainer())
 document.getElementById('habilidades').appendChild(sectionHabilidades.getContainer())
