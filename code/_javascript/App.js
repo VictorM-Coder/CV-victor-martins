@@ -3,6 +3,13 @@ sectionObjetivos.addItem('Aplicar meus conhecimentos adquiridos durante a matér
 sectionObjetivos.addItem('Praticar e aprimorar minhas soft skills. Tais como trabalho em equipe, criatividade e comunicação')
 sectionObjetivos.addItem('Contribuir com a comunidade acadêmica da UFC')
 
+let sectionFormacao = new Container('Formação')
+sectionFormacao.addItem('Universidade Federal do Ceará', 'Engenharia de Software (2021-cursando)', true)
+sectionFormacao.addItem('EEEP Alfredo Nunes de Melo', 'Técnico em Administração (conclusão: 2021)', true)
+
+let sectionExperiencia = new Container('Experiência')
+sectionExperiencia.addItem('Estágio - Moveletro ltda (2021)', 'Realizei a organização de arquivos, consulta e manipulação do sistema da empresa, e atendimento ao cliente', true)
+
 let sectionTecnologias = new Container('Tecnologias')
 sectionTecnologias.addItem('Java (intermediário)', 'POO, introdução à JDBC e introdução à JavaFX')
 sectionTecnologias.addItem('MySQL (básico/intermediário)', 'Criação de tabelas, consulta de dados e relacionamentos entre tabelas')
@@ -21,5 +28,7 @@ sectionHabilidades.addItem('Introdução à psicologia das cores', 'Leitura da �
 sectionHabilidades.addItem('UI/UX', 'Autodidata')
 
 document.getElementById('objetivos').appendChild(sectionObjetivos.getContainer())
+document.getElementById('formacao').appendChild(sectionFormacao.getContainer())
+document.getElementById('experiencia').appendChild(sectionExperiencia.getContainer())
 document.getElementById('tecnologias').appendChild(sectionTecnologias.getContainer())
 document.getElementById('habilidades').appendChild(sectionHabilidades.getContainer())
