@@ -2,15 +2,15 @@ class Container{
     constructor(titleText){
         this.titleText = titleText
 
-        this.initComponents()
-        this.initStyles()
+        this.#initComponents()
+        this.#initStyles()
     }
 
     getContainer(){
         return this.section
     }
 
-    initComponents(){
+    #initComponents(){
         this.section = document.createElement('section')
 
         this.titlePrincipal = document.createElement('h2')
@@ -24,16 +24,16 @@ class Container{
         this.containerList.appendChild(this.list)
     }
 
-    initStyles(){
-        this.section.classList.add('row', 'mt-3', 'py-1')
+    #initStyles(){
+        this.section.classList.add('row', 'mt-3', 'py-1', 'bg-success')
         this.titlePrincipal.classList.add('h2-default')
 
         this.containerList.classList.add('container', 'p-0')
         this.list.classList.add('ul-default', 'row', 'p-0')
     }
 
-    addItem(title, desription){
-        this.list.appendChild(this.#createItem(title, desription))
+    addItem(title, description){
+        this.list.appendChild(this.#createItem(title, description))
     }
 
     #createItem(title, description){
