@@ -10,6 +10,11 @@ sectionFormacao.addItem('EEEP Alfredo Nunes de Melo', 'Técnico em Administraç�
 let sectionExperiencia = new Container('Experiência')
 sectionExperiencia.addItem('Estágio - Moveletro ltda (2021)', 'Realizei a organização de arquivos, consulta e manipulação do sistema da empresa, e atendimento ao cliente', true)
 
+let sectionEducacao = new Container('Educação')
+sectionEducacao.addItem('Desenvolvimento web completo - Udemy (110 hrs)', 'Módulos atualmente concluídos: HTML5, CSS3, CSS3 intermediário e avançado, Bootstrap 4 e design responsivo, JavaScript, ES6 e orientação a objetos (2021-cursando)', true)
+sectionEducacao.addItem('Linguagem de Programação Java Avançado - F. Bradesco (16 hrs)', 'POO, complementos da linguagem, tratamento de exceções e integração com banco de dados (2022)', true)
+sectionEducacao.addItem('Inglês - C1 (EF SET)', 'Reading: C1 / Listenig: B2 ', true)
+
 let sectionTecnologias = new Container('Tecnologias')
 sectionTecnologias.addItem('Java (intermediário)', 'POO, introdução à JDBC e introdução à JavaFX')
 sectionTecnologias.addItem('MySQL (básico/intermediário)', 'Criação de tabelas, consulta de dados e relacionamentos entre tabelas')
@@ -30,5 +35,6 @@ sectionHabilidades.addItem('UI/UX', 'Autodidata')
 document.getElementById('objetivos').appendChild(sectionObjetivos.getContainer())
 document.getElementById('formacao').appendChild(sectionFormacao.getContainer())
 document.getElementById('experiencia').appendChild(sectionExperiencia.getContainer())
+document.getElementById('educacao').appendChild(sectionEducacao.getContainer())
 document.getElementById('tecnologias').appendChild(sectionTecnologias.getContainer())
 document.getElementById('habilidades').appendChild(sectionHabilidades.getContainer())
