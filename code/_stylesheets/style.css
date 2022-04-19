@@ -152,6 +152,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: var(--secondary-100);
+    text-decoration: none;
 }
 
 .ul-default{
@@ -167,6 +168,9 @@
     margin-bottom: 0px !important;
 }
 
+.link-default{
+    text-decoration: none;
+}
 .link-default:hover{
     color: var(--secondary-90) !important;
     transform: scale(1.04);
@@ -210,4 +214,9 @@ body{
 .img-menu{
     width: 60px;
     border-radius: 30px;
+}
+
+.icon-default{
+    font-size: 40px;
+    color: var(--secondary-100);
 }
