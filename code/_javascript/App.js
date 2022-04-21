@@ -32,9 +32,16 @@ sectionHabilidades.addItem('Pacote Office', 'Cursos de Word, Excel e Power Point
 sectionHabilidades.addItem('Introdução à psicologia das cores', 'Leitura da “Psicologia das cores: Como as cores afetam a emocao e a razao')
 sectionHabilidades.addItem('UI/UX', 'Autodidata')
 
+let addressContatos = new ContainerFooter()
+addressContatos.addItem('github', 'mdi:github', '')
+addressContatos.addItem('linkedin', 'mdi:linkedin', '')
+addressContatos.addItem('e-mail', 'mdi:email', '')
+addressContatos.addItem('instagram', 'mdi:instagram', '')
+
 document.getElementById('objetivos').appendChild(sectionObjetivos.getContainer())
 document.getElementById('formacao').appendChild(sectionFormacao.getContainer())
 document.getElementById('experiencia').appendChild(sectionExperiencia.getContainer())
 document.getElementById('educacao').appendChild(sectionEducacao.getContainer())
 document.getElementById('tecnologias').appendChild(sectionTecnologias.getContainer())
 document.getElementById('habilidades').appendChild(sectionHabilidades.getContainer())
+document.getElementById('contatos').appendChild(addressContatos.getContainer())
