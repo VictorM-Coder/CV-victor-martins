@@ -25,7 +25,7 @@ class Container{
     }
 
     #initStyles(){
-        this.section.classList.add('row', 'py-1', 'bg-success')
+        this.section.classList.add('row', 'py-1', 'bg-container', 'border-default', 'shadow-default', 'h-100')
         this.titlePrincipal.classList.add('h2-default')
 
         this.containerList.classList.add('container', 'p-0')

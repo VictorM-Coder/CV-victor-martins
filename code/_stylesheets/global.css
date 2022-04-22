@@ -3,14 +3,16 @@
 /*#region Font imports*/
 @font-face {
     font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica.ttf);
+    src: url(../_fonts/Helvetica.ttf) format("truetype");
     font-weight: normal;
+    font-style: normal;
 }
-
+/*AJUSTAR FONTES*/
 @font-face {
-    font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica-Bold.ttf);
+    font-family: 'Helvetica2';
+    src: url(../_fonts/Helvetica-Bold.ttf) format("truetype");
     font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
@@ -44,6 +46,8 @@
     --primary-20: #002B76;
     --primary-10: #00184A;
     --primary-0: #000000;
+
+    --shadow-color: hsla(224, 34%, 13%, 0.1);
     
     --secondary-100: #FFFFFF;
     --secondary-99: #FDFBFF;
@@ -63,5 +67,6 @@
     /*#region Font Styles*/
     --title-font: 'Metropolis', sans-serif;
     --text-font: 'Helvetica', sans-serif;
+    --text-font2: 'Helvetica', sans-serif;
     /*#endregion*/
 }
