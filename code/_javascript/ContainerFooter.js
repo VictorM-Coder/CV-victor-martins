@@ -17,7 +17,7 @@ class ContainerFooter{
     }
 
     #initStyles(){
-        this.container.classList.add('container')
+        this.container.classList.add('container', 'mb-0')
         this.row.classList.add('row')
     }
 
