@@ -24,16 +24,13 @@ class ContainerFooter{
     addItem(name, iconURL, URL){
         let item = document.createElement('div')
         let link = document.createElement('a')
-        let icon = document.createElement('span')
+        let icon = IconCreator.createIcon(iconURL)
         let text = document.createElement('span')
 
         item.classList.add('col-12', 'col-lg-3', 'pb-1')
 
         link.classList.add('link-default')
         link.href = URL
-
-        icon.classList.add('iconify', 'icon-default')
-        icon.setAttribute('data-icon', iconURL)
 
         text.classList.add('btn-text')
         text.innerText = name

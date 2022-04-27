@@ -7,14 +7,6 @@
     font-weight: normal;
     font-style: normal;
 }
-/*AJUSTAR FONTES*/
-@font-face {
-    font-family: 'Helvetica2';
-    src: url(../_fonts/Helvetica-Bold.ttf) format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'Metropolis';
     src: url(../_fonts/Metropolis-Regular.otf);
@@ -67,6 +59,5 @@
     /*#region Font Styles*/
     --title-font: 'Metropolis', sans-serif;
     --text-font: 'Helvetica', sans-serif;
-    --text-font2: 'Helvetica', sans-serif;
     /*#endregion*/
 }

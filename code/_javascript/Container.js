@@ -10,7 +10,7 @@ class Container{
         return this.section
     }
 
-    #initComponents(){
+    #initComponents(iconURL){
         this.section = document.createElement('section')
 
         this.titlePrincipal = document.createElement('h2')
