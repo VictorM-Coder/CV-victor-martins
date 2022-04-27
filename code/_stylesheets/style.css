@@ -114,6 +114,11 @@
     padding-bottom: 15px !important;
 }
 
+.px-1{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
 .py-middle-1{
     padding-top: 7.5px !important;
     padding-bottom: 7.5px !important;
