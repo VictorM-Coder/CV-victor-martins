@@ -3,9 +3,15 @@
 /*#region Font imports*/
 @font-face {
     font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica.ttf) format("truetype");
+    src: url(../_fonts/Helvetica.ttf);
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../_fonts/Helvetica-Bold.ttf);
+    font-weight: bold;
 }
 @font-face {
     font-family: 'Metropolis';

@@ -1,47 +1,14 @@
-let sectionObjetivos =  new Container('Objetivos','mdi:bullseye-arrow')
-sectionObjetivos.addItem('Aplicar meus conhecimentos adquiridos durante a matéria de modo prático e didátido')
-sectionObjetivos.addItem('Praticar e aprimorar minhas soft skills. Tais como trabalho em equipe, criatividade e comunicação')
-sectionObjetivos.addItem('Contribuir com a comunidade acadêmica da UFC')
-
-let sectionFormacao = new Container('Formação')
-sectionFormacao.addItem('Universidade Federal do Ceará', 'Engenharia de Software (2021-cursando)', true)
-sectionFormacao.addItem('EEEP Alfredo Nunes de Melo', 'Técnico em Administração (conclusão: 2021)', true)
-
-let sectionExperiencia = new Container('Experiência')
-sectionExperiencia.addItem('Estágio - Moveletro ltda (2021)', 'Realizei a organização de arquivos, consulta e manipulação do sistema da empresa, e atendimento ao cliente', true)
-
-let sectionEducacao = new Container('Educação')
-sectionEducacao.addItem('Desenvolvimento web completo - Udemy (110 hrs)', 'Módulos atualmente concluídos: HTML5, CSS3, CSS3 intermediário e avançado, Bootstrap 4 e design responsivo, JavaScript, ES6 e orientação a objetos (2021-cursando)', true)
-sectionEducacao.addItem('Linguagem de Programação Java Avançado - F. Bradesco (16 hrs)', 'POO, complementos da linguagem, tratamento de exceções e integração com banco de dados (2022)', true)
-sectionEducacao.addItem('Inglês - C1 (EF SET)', 'Reading: C1 / Listenig: B2 ', true)
-
-let sectionTecnologias = new Container('Tecnologias')
-sectionTecnologias.addItem('Java (intermediário)', 'POO, introdução à JDBC e introdução à JavaFX')
-sectionTecnologias.addItem('MySQL (básico/intermediário)', 'Criação de tabelas, consulta de dados e relacionamentos entre tabelas')
-sectionTecnologias.addItem('HTML(intermediário)', 'estruturação e uso semântico de tags')
-sectionTecnologias.addItem('CSS (intermediário)', 'Estilizações básicas e uso de variáveis')
-sectionTecnologias.addItem('JavaScript (básico/intermediário)', 'Fundamentos e introdução à programação orientada a objetos em js')
-sectionTecnologias.addItem('Bootstrap (básico)', 'Introdução ao uso do bootstrap e criação de sites responsivos')
-sectionTecnologias.addItem('Git e Github (básico)', 'Introdução aos comandos básicos do git e versionamento de código')
-sectionTecnologias.addItem('Linguagem C (básico)', 'Introdução a sintaxe básica')
-
-let sectionHabilidades = new Container('Habilidades')
-sectionHabilidades.addItem('Prototipação com figma', 'Autodidata')
-sectionHabilidades.addItem('Metodologia ágil', 'Estudada ao longo da cadeira de "processos de software" - UFC')
-sectionHabilidades.addItem('Pacote Office', 'Cursos de Word, Excel e Power Point realizados na fundação Bradesco')
-sectionHabilidades.addItem('Introdução à psicologia das cores', 'Leitura da “Psicologia das cores: Como as cores afetam a emocao e a razao')
-sectionHabilidades.addItem('UI/UX', 'Autodidata')
+for (const index in section) {
+    let container = new Container(section[index])
+    for (const index1 in section[index].items) {
+        container.addItem(section[index].items[index1])
+    }
+    document.getElementById('section' + index).appendChild(container.getContainer())
+}
 
 let addressContatos = new ContainerFooter()
 addressContatos.addItem('github', 'mdi:github', '')
 addressContatos.addItem('linkedin', 'mdi:linkedin', '')
 addressContatos.addItem('e-mail', 'mdi:email', '')
 addressContatos.addItem('instagram', 'mdi:instagram', '')
-
-document.getElementById('objetivos').appendChild(sectionObjetivos.getContainer())
-document.getElementById('formacao').appendChild(sectionFormacao.getContainer())
-document.getElementById('experiencia').appendChild(sectionExperiencia.getContainer())
-document.getElementById('educacao').appendChild(sectionEducacao.getContainer())
-document.getElementById('tecnologias').appendChild(sectionTecnologias.getContainer())
-document.getElementById('habilidades').appendChild(sectionHabilidades.getContainer())
 document.getElementById('contatos').appendChild(addressContatos.getContainer())

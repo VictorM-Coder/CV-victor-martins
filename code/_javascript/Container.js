@@ -1,8 +1,8 @@
 class Container{
-    constructor(titleText, iconURL){
-        this.titleText = titleText
+    constructor(section){
+        this.titleText = section.title
 
-        this.#initComponents(iconURL)
+        this.#initComponents(section.iconURL)
         this.#initStyles()
     }
 
@@ -30,7 +30,7 @@ class Container{
         this.containerList.appendChild(this.list)
 
         //Add Icon
-        this.head.appendChild(IconCreator.createIcon(iconURL))
+        this.head.appendChild(IconCreator.createIcon(iconURL, 'decoration-color'))
     }
 
     #initStyles(){
@@ -43,11 +43,11 @@ class Container{
         this.list.classList.add('ul-default', 'row', 'p-0')
     }
 
-    addItem(title, description, isIntern){
-        if(description !== undefined){
-            this.list.appendChild(this.#createItemComplete(title, description, isIntern))
+    addItem(item){
+        if(item.description !== undefined){
+            this.list.appendChild(this.#createItemComplete(item.title, item.description, item.isIntern))
         }else{
-            this.list.appendChild(this.#createItemSimple(title))
+            this.list.appendChild(this.#createItemSimple(item.title))
         }
     }
 

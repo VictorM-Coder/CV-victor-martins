@@ -247,6 +247,10 @@ body{
     background-color: var(--primary-100);
 }
 
+.decoration-color{
+    color: hsla(220, 74%, 45%, 0.322);
+}
+
 .shadow-default{
     box-shadow: 0px 3px 4px 0px var(--shadow-color) ;
 }
