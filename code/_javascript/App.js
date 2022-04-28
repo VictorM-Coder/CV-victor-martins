@@ -1,4 +1,4 @@
-let sectionObjetivos =  new Container('Objetivos')
+let sectionObjetivos =  new Container('Objetivos','mdi:bullseye-arrow')
 sectionObjetivos.addItem('Aplicar meus conhecimentos adquiridos durante a matéria de modo prático e didátido')
 sectionObjetivos.addItem('Praticar e aprimorar minhas soft skills. Tais como trabalho em equipe, criatividade e comunicação')
 sectionObjetivos.addItem('Contribuir com a comunidade acadêmica da UFC')

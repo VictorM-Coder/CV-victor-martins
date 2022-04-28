@@ -33,6 +33,7 @@ class ContainerFooter{
         link.href = URL
 
         text.classList.add('btn-text')
+        text.style.marginLeft = '5px';
         text.innerText = name
 
         item.appendChild(link)

@@ -1,8 +1,8 @@
 class Container{
-    constructor(titleText){
+    constructor(titleText, iconURL){
         this.titleText = titleText
 
-        this.#initComponents()
+        this.#initComponents(iconURL)
         this.#initStyles()
     }
 
@@ -22,17 +22,21 @@ class Container{
         this.containerList = document.createElement('div')
         this.list = document.createElement('ul')
 
+        //Content Appends
         this.section.appendChild(this.adjustDiv)
         this.adjustDiv.appendChild(this.head)
         this.head.appendChild(this.titlePrincipal)
         this.adjustDiv.appendChild(this.containerList)
         this.containerList.appendChild(this.list)
+
+        //Add Icon
+        this.head.appendChild(IconCreator.createIcon(iconURL))
     }
 
     #initStyles(){
         this.section.classList.add('row', 'bg-container', 'border-default', 'shadow-default', 'h-100')
         this.adjustDiv.classList.add('p-0')
-        this.head.classList.add('pt-1', 'px-1')
+        this.head.classList.add('pt-1', 'px-1', 'd-flex', 'justify-content-between')
         this.titlePrincipal.classList.add('h2-default')
 
         this.containerList.classList.add('container', 'p-0')
