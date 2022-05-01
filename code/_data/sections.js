@@ -23,7 +23,7 @@ const section =
     },
     {
         "title": "Formação",
-        "iconURL": "mdi:bullseye-arrow",
+        "iconURL": "mdi:school-outline",
         "items":[
             {
                 "title": "Universidade Federal do Ceará",
@@ -39,7 +39,7 @@ const section =
     },
     {
         "title": "Experiência",
-        "iconURL": "mdi:bullseye-arrow",
+        "iconURL": "mdi:briefcase-check-outline",
         "items":[
             {
                 "title": "Estágio - Moveletro ltda (2021)",
@@ -50,7 +50,7 @@ const section =
     },
     {
         "title": "Educação",
-        "iconURL": "mdi:bullseye-arrow",
+        "iconURL": "mdi:book-outline",
         "items":[
             {
                 "title": "Desenvolvimento web completo - Udemy (110 hrs)",
@@ -71,7 +71,7 @@ const section =
     },
     {
         "title": "Tecnologias",
-        "iconURL": "mdi:bullseye-arrow",
+        "iconURL": "mdi:cog-outline",
         "items":[
             {
                 "title": "Java (intermediário)",
@@ -117,7 +117,7 @@ const section =
     },
     {
         "title": "Habilidades",
-        "iconURL": "mdi:bullseye-arrow",
+        "iconURL": "mdi:lightbulb-on-outline",
         "items":[
             {
                 "title": "Prototipação com figma",

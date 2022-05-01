@@ -3,14 +3,14 @@
 /*#region Font imports*/
 @font-face {
     font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica.ttf);
+    src: url(../_fonts/FreeSans.otf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url(../_fonts/Helvetica-Bold.ttf);
+    src: url(../_fonts/FreeSansBold.otf);
     font-weight: bold;
 }
 @font-face {

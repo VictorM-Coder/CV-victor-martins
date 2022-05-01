@@ -156,9 +156,8 @@
 }
 
 .btn-text{
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1.25px;
-    font-weight: bold;
     text-transform: uppercase;
     color: var(--secondary-100);
     text-decoration: none;
@@ -175,7 +174,7 @@
     font-weight: bold;
     letter-spacing: 0.5%;
     color: var(--primary-30);
-    margin-bottom: 0px !important;
+    margin-bottom: 0.2em !important;
 }
 
 .link-default{
@@ -227,7 +226,7 @@ body{
 }
 
 .icon-default{
-    font-size: 40px;
+    font-size: 34px;
     color: var(--secondary-100);
 }
 

@@ -60,9 +60,9 @@ class Container{
         itemDescription.innerHTML = description
 
         itemTitle.classList.add('li-default')
-        itemDescription.classList.add('text-default')
+        itemDescription.classList.add('text-default', 'm-0')
 
-        item.classList.add('col-12', 'col-sm-6')
+        item.classList.add('col-12', 'col-sm-6', 'mb-2')
 
         if(isIntern !== undefined && isIntern === true){
             item.classList.add('col-lg-12')
