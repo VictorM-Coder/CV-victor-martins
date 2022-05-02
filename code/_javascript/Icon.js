@@ -1,11 +1,11 @@
 class IconCreator{
-    static createIcon(iconURL, colorClass){
+    static createIcon(iconURL, iconStyle){
         let icon = document.createElement('span')
-        icon.classList.add('iconify', 'icon-default')
+        icon.classList.add('iconify')
         icon.setAttribute('data-icon', iconURL)
 
-        if(colorClass !== undefined && colorClass !== null){
-            icon.classList.add(colorClass)
+        if(iconStyle !== undefined && iconStyle !== null){
+            icon.classList.add(iconStyle)
         }
 
         return icon

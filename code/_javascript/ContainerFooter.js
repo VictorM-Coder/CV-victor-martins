@@ -24,7 +24,7 @@ class ContainerFooter{
     addItem(name, iconURL, URL){
         let item = document.createElement('div')
         let link = document.createElement('a')
-        let icon = IconCreator.createIcon(iconURL)
+        let icon = IconCreator.createIcon(iconURL, 'icon-default')
         let text = document.createElement('span')
 
         item.classList.add('col-12', 'col-lg-3', 'pb-1')

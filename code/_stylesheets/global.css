@@ -2,14 +2,14 @@
 
 /*#region Font imports*/
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'FreeSans';
     src: url(../_fonts/FreeSans.otf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'FreeSans';
     src: url(../_fonts/FreeSansBold.otf);
     font-weight: bold;
 }
@@ -64,6 +64,6 @@
 
     /*#region Font Styles*/
     --title-font: 'Metropolis', sans-serif;
-    --text-font: 'Helvetica', sans-serif;
+    --text-font: 'FreeSans', sans-serif;
     /*#endregion*/
 }

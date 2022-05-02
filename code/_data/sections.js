@@ -79,7 +79,7 @@ const section =
                 "isIntern": false
             },
             {
-                "title": "'MySQL (básico/intermediário)",
+                "title": "MySQL (básico/intermediário)",
                 "description": "Criação de tabelas, consulta de dados e relacionamentos entre tabelas",
                 "isIntern": false
             },
@@ -131,12 +131,12 @@ const section =
             },
             {
                 "title": "Pacote Office",
-                "description": "'Cursos de Word, Excel e Power Point realizados na fundação Bradesco",
+                "description": "Cursos de Word, Excel e Power Point realizados na fundação Bradesco",
                 "isIntern": false
             },
             {
                 "title": "Introdução à psicologia das cores",
-                "description": "Leitura da “Psicologia das cores: Como as cores afetam a emocao e a razão",
+                "description": "Leitura da “Psicologia das cores: Como as cores afetam a emocao e a razão“",
                 "isIntern": false
             },
             {

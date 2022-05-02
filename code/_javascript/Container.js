@@ -30,7 +30,7 @@ class Container{
         this.containerList.appendChild(this.list)
 
         //Add Icon
-        this.head.appendChild(IconCreator.createIcon(iconURL, 'decoration-color'))
+        this.head.appendChild(IconCreator.createIcon(iconURL, 'icon-decoration'))
     }
 
     #initStyles(){
@@ -53,7 +53,8 @@ class Container{
 
     #createItemComplete(title, description, isIntern){
         let item = document.createElement('li')
-        let itemTitle = document.createElement('p')
+        let titleContainer = document.createElement('span')
+        let itemTitle = document.createElement('span')
         let itemDescription = document.createElement('p')
 
         itemTitle.innerHTML = title
@@ -69,9 +70,10 @@ class Container{
         }else{
             item.classList.add('col-lg-4')
         }
-        
 
-        item.appendChild(itemTitle)
+        titleContainer.appendChild(IconCreator.createIcon('mdi:check-circle-outline', 'icon-list'))
+        titleContainer.appendChild(itemTitle)
+        item.appendChild(titleContainer)
         item.appendChild(itemDescription)
 
         return item

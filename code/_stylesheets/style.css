@@ -230,6 +230,17 @@ body{
     color: var(--secondary-100);
 }
 
+.icon-decoration{
+    font-size: 34px;
+    color:#1e56c754;
+}
+
+.icon-list{
+    font-size: 24px;
+    color: var(--primary-30);
+    margin-right: 0.1em;
+}
+
 .border-default{
     border-radius: 4px;
 }
