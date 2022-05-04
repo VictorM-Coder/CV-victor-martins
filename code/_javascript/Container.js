@@ -36,11 +36,11 @@ class Container{
     #initStyles(){
         this.section.classList.add('row', 'bg-container', 'border-default', 'shadow-default', 'h-100')
         this.adjustDiv.classList.add('p-0')
-        this.head.classList.add('pt-1', 'px-1', 'd-flex', 'justify-content-between')
+        this.head.classList.add('p-1', 'd-flex', 'justify-content-between')
         this.titlePrincipal.classList.add('h2-default')
 
-        this.containerList.classList.add('container', 'p-0')
-        this.list.classList.add('ul-default', 'row', 'p-0')
+        this.containerList.classList.add('container')
+        this.list.classList.add('ul-default', 'row')
     }
 
     addItem(item){

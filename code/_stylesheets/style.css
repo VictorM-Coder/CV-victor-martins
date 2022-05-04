@@ -148,6 +148,7 @@
     letter-spacing: 0.25;
     font-weight: 300;
     color: var(--primary-20);
+    margin-bottom: 0px !important;
 }
 
 .h3-default{
