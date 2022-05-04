@@ -44,26 +44,30 @@ class Container{
     }
 
     addItem(item){
-        if(item.description !== undefined){
+        if(item.title !== undefined && item.title !== null){
             this.list.appendChild(this.#createItemComplete(item.title, item.description, item.isIntern))
         }else{
-            this.list.appendChild(this.#createItemSimple(item.title))
+            this.list.appendChild(this.#createItemSimple(item.description))
         }
     }
 
     #createItemComplete(title, description, isIntern){
         let item = document.createElement('li')
-        let titleContainer = document.createElement('span')
+        let contentContainer = document.createElement('div')
+        let iconContainer = document.createElement('div')
         let itemTitle = document.createElement('span')
         let itemDescription = document.createElement('p')
 
         itemTitle.innerHTML = title
         itemDescription.innerHTML = description
+        iconContainer.appendChild(IconCreator.createIcon('mdi:check-circle-outline', 'icon-list'))
 
+
+        contentContainer.classList.add()
         itemTitle.classList.add('li-default')
         itemDescription.classList.add('text-default', 'm-0')
 
-        item.classList.add('col-12', 'col-sm-6', 'mb-2')
+        item.classList.add('col-12', 'col-sm-6', 'mb-2', 'd-flex')
 
         if(isIntern !== undefined && isIntern === true){
             item.classList.add('col-lg-12')
@@ -71,10 +75,10 @@ class Container{
             item.classList.add('col-lg-4')
         }
 
-        titleContainer.appendChild(IconCreator.createIcon('mdi:check-circle-outline', 'icon-list'))
-        titleContainer.appendChild(itemTitle)
-        item.appendChild(titleContainer)
-        item.appendChild(itemDescription)
+        item.appendChild(iconContainer)
+        contentContainer.appendChild(itemTitle)
+        contentContainer.appendChild(itemDescription)
+        item.appendChild(contentContainer)
 
         return item
     }
@@ -87,6 +91,7 @@ class Container{
 
         item.classList.add('col-lg-4')
         itemText.classList.add('text-default')
+        console.log('criado item simples')
 
         item.appendChild(itemText)
 

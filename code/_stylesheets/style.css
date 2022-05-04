@@ -1,23 +1,23 @@
 @charset "utf-8";
 /*#region Margin config*/
 .mt-1{
-    margin-top: 20px !important;
+    margin-top: 5px !important;
 }
 
 .mb-1{
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
 }
 
 .ms-1{
-    margin-left: 20px !important;
+    margin-left: 5px !important;
 }
 
 .me-1{
-    margin-right: 20px !important;
+    margin-right: 5px !important;
 }
 
 .m-1{
-    margin: 20px !important;
+    margin: 5px !important;
 }
 
 .mt-2{
@@ -174,7 +174,6 @@
     font-weight: bold;
     letter-spacing: 0.5%;
     color: var(--primary-30);
-    margin-bottom: 0.2em !important;
 }
 
 .link-default{
