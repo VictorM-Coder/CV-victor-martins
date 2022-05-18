@@ -9,10 +9,23 @@ Um currículo em formato de site criado para mim mesmo, no intuito de praticar d
 
 ## Tecnologias utilizadas
 * HTML5
+  * Estruturação
+  * Semântica
 * CSS3
+  * Estilização
+  * Responsividade
 * JavaScript
+  * Lógica
+  * Criação de componentes
 * Bootstrap
+  * Grid
+  * Responsividade
 * Ajax
+  * Requerimentos HTTP
 * Git & GitHub
+  * Versionamento de código
+  * Hospedagem do site
 * JSON Server
+  * Testagem dos requimentos em máquina
 * VSCode
+  * Codificação
