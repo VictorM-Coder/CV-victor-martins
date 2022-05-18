@@ -65,7 +65,7 @@ class Container{
         itemTitle.classList.add('li-default')
         itemDescription.classList.add('text-default', 'm-0')
 
-        item.classList.add('col-12', 'col-sm-6', 'mb-2', 'd-flex')
+        item.classList.add('col-12', 'col-md-6', 'mb-2', 'd-flex')
 
         if(isIntern !== undefined && isIntern === true){
             item.classList.add('col-lg-12')
@@ -84,13 +84,15 @@ class Container{
     #createItemSimple(text){
         let item = document.createElement('li')
         let itemText = document.createElement('p')
+        let iconContainer = document.createElement('div')
+        iconContainer.appendChild(IconCreator.createIcon('mdi:check-circle-outline', 'icon-list'))
 
         itemText.innerHTML = text
 
-        item.classList.add('col-lg-4')
-        itemText.classList.add('text-default')
-        console.log('criado item simples')
+        item.classList.add('col-lg-4', 'd-flex')
+        itemText.classList.add('li-default', 'mb-2')
 
+        item.appendChild(iconContainer)
         item.appendChild(itemText)
 
         return item

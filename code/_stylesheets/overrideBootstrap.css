@@ -7,6 +7,10 @@
     background-color: var(--primary-color);
 }
 
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
 .row{
     --bs-gutter-x: 30px !important;
     margin-left: 0px;
