@@ -62,8 +62,6 @@ class Container{
         itemDescription.innerHTML = description
         iconContainer.appendChild(IconCreator.createIcon('mdi:check-circle-outline', 'icon-list'))
 
-
-        contentContainer.classList.add()
         itemTitle.classList.add('li-default')
         itemDescription.classList.add('text-default', 'm-0')
 
