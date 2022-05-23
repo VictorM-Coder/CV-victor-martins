@@ -30,7 +30,6 @@ body{
 
 .icon-default{
     font-size: 34px;
-    color: var(--secondary-100);
 }
 
 .icon-decoration{
@@ -58,6 +57,10 @@ body{
 
 .bg-container{
     background-color: var(--primary-100);
+}
+
+.color-primary-100{
+    color: var(--primary-100);
 }
 
 .decoration-color{

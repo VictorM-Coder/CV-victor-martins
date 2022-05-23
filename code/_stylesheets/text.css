@@ -33,7 +33,6 @@
     font-size: 16px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
-    color: var(--secondary-100);
     text-decoration: none;
 }
 
@@ -42,6 +41,7 @@
     padding-inline-start: 0px;
     margin-left: 0px;
 }
+
 .li-default{
     font-size: 16px;
     font-family: var(--text-font);
@@ -52,6 +52,7 @@
 
 .link-default{
     text-decoration: none;
+    color: var(--primary-100);
 }
 
 .link-default:hover{
